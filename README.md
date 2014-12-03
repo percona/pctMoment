@@ -50,8 +50,16 @@ These are the motivations for creating yet another Angular.js Moment.js wrapper:
 - Not tied to any Moment.js version.
 - Not tied to any Moment-timezone version.
 - Motivate good practices
-- To provide a as thing as possible abstraction layer from Moment's API
+- To provide as thin as possible abstraction layer from Moment's API
+- To provide a reusable module from which people can build more complex things
 
+
+## Inspiration
+
+Thanks to all these resources for inspiration and learning:
+
+- https://github.com/VictorQueiroz/ngMoment
+- https://github.com/urish/angular-moment
 
 ## Licence
 
