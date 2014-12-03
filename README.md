@@ -1,6 +1,8 @@
 pctMoment
 =========
 
+[![Build Status]](https://travis-ci.org/percona/pctMoment.svg?branch=master)
+
 Angular.js wrapper for [Moment.js](http://momentjs.com) and potentially for
 [moment-timezone.js](http://momentjs.com/timezone).
 
