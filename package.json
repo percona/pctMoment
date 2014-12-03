@@ -2,7 +2,7 @@
   "name": "pctMoment",
   "version": "0.0.1",
   "scripts": {
-    "test": "gulp test"
+    "test": "node_modules/.bin/gulp continuous"
   },
   "license": "MIT",
   "devDependencies": {

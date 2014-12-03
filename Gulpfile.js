@@ -20,4 +20,6 @@ gulp.task('docs', function () {
 });
 
 
+gulp.task('continuous', ['test']);
+
 gulp.task('default', []);
