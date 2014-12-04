@@ -13,7 +13,7 @@ Angular.js wrapper for [Moment.js](http://momentjs.com) and potentially for
 Download it with bower:
 
 ```sh
-bower install --save pctMoment
+bower install --save pct-moment
 ```
 
 
