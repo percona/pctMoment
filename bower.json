@@ -1,7 +1,6 @@
 {
-  "name": "pctMoment",
+  "name": "pct-moment",
   "description": "Angular wrapper for Moment.js and Moment-timezone.js",
-  "version": "0.0.1",
   "authors": [
     "franleplant <franleplant@gmail.com>"
   ],
