@@ -14,6 +14,7 @@
      *  @description
      *  Wrapper for [Moment.js](http://momentjs.com) and potentially for
      *  [moment-timezone.js](http://momentjs.com/timezone).
+     *
      *  The objective of this service is to hide `window.moment` under
      *  an angular service which potentially can be mocked and
      *  thus improving testability and integration.
@@ -33,35 +34,6 @@
      *
      *
      *  @requires $window
-     *
-     *  @example
-        <example module="pctMoment">
-        <file name="script.js">
-            angular.module('example', ['pctMoment'])
-            .controller('ExampleController', function (moment) {
-
-                //use momentjs api!
-
-                moment().format();
-
-                moment().startOf('day').fromNow();
-
-
-                //if you also add moment-timezon.js to your site,
-                //then you can use its API too!
-
-                moment.tz("2014-06-01 12:00", "America/New_York");
-
-                //don't forget to load the Time Zones data when
-                //using moment-timezones!
-
-
-            });
-        </file>
-       </example>
-     *
-     * <hr />
-     *
      */
     function momentService($window) {
 

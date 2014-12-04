@@ -9,7 +9,7 @@
      * Wrapper for [Moment.js](http://momentjs.com) and potentially for
      * [moment-timezone.js](http://momentjs.com/timezone).
      *
-     * Checkout detailed docs here: {@link pctMoment.service.moment 'moment'}
+     * Checkout detailed docs in `main.service.js`
      *
      *
      */

@@ -53,6 +53,9 @@ you can install other versions freely.
 
 ## How to use it
 
+This wrapper returns a shortcut for `window.moment`, the same
+moment APIs are still there, checkout their [docs](http://momentjs.com)
+ 
 
 ```javascript
 //script.js
