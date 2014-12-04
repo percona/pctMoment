@@ -1,3 +1,9 @@
+/*
+ * Karma conf for plain, not compiled sourcers
+ *
+ *
+ */
+
 module.exports = function(config) {
     config.set({
         browsers: ['PhantomJS'],
@@ -10,7 +16,7 @@ module.exports = function(config) {
             'bower_components/moment-timezone/builds/moment-timezone-with-data-2010-2020.js',
 
             // Source files
-            'src/**/*!(.spec).js',
+            'src/**/!(*.spec).js',
 
             // Test files
             'src/**/*.spec.js'
