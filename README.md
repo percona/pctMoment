@@ -7,31 +7,76 @@ Angular.js wrapper for [Moment.js](http://momentjs.com) and potentially for
 [moment-timezone.js](http://momentjs.com/timezone).
 
 
+
+## Installation
+
+Download it with bower:
+
+```sh
+bower install --save pctMoment
+```
+
+
+**pctMoment** allows you to use any version of Moment.js
+that is greater than version `2.0`.
+
+Optionally you can also use Moment-timezone.js, 
+any version that is greater than `0.2`.
+
+You can use bower or any other means to download whatever Moment.js
+and Moment-timezone.js version you want to use (given the above constraints) 
+just don't forget to add them to your site.
+
+**pctMoment**'s bower package has this both libs as dependencies,
+you can install other versions freely.
+
+### Use with Moment.js
+```html
+<script src="moment.js"></script>
+<script src="pctMoment.js"></script>
+```
+
+### Use with Moment.js and Moment-timezone.js
+```html
+<script src="moment.js"></script>
+<script src="moment-timezone.js"></script>
+<script src="pctMoment.js"></script>
+```
+ 
+### Get an error!
+```html
+<script src="pctMoment.js"></script>
+```
+ 
+
+
+
 ## How to use it
 
 
 ```javascript
 //script.js
-    angular.module('example', ['pctMoment'])
-    .controller('ExampleController', function (moment) {
+angular.module('example', ['pctMoment'])
 
-        //use momentjs api!
+.controller('ExampleController', function (moment) {
 
-        moment().format();
+    //use momentjs api!
 
-        moment().startOf('day').fromNow();
+    moment().format();
 
-
-        //if you also add moment-timezon.js to your site,
-        //then you can use its API too!
-
-        moment.tz("2014-06-01 12:00", "America/New_York");
-
-        //don't forget to load the Time Zones data when
-        //using moment-timezones!
+    moment().startOf('day').fromNow();
 
 
-    });
+    //if you also add moment-timezone.js to your site,
+    //then you can use its API too!
+
+    moment.tz("2014-06-01 12:00", "America/New_York");
+
+    //don't forget to load the Time Zones data when
+    //using moment-timezones!
+
+
+});
 ```
 
 
