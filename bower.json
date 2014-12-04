@@ -17,12 +17,7 @@
   "main": "dist/pctMoment.js",
   "ignore": [
     "*",
-    "!dist",
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
+    "!dist"
   ],
   "dependencies": {
     "moment": ">2.0",
