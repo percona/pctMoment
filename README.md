@@ -1,9 +1,9 @@
 pctMoment
 =========
 
-![Build Status](https://travis-ci.org/percona/pctMoment.svg?branch=master)
+[![Build Status](https://travis-ci.org/percona/pctMoment.svg?branch=master)](https://travis-ci.org/percona/pctMoment)
 [![Bower version](https://badge.fury.io/bo/pct-moment.svg)](http://badge.fury.io/bo/pct-moment)
-
+[![Coverage Status](https://img.shields.io/coveralls/percona/pctMoment.svg)](https://coveralls.io/r/percona/pctMoment)
 
 Angular.js wrapper for [Moment.js](http://momentjs.com) and potentially for
 [moment-timezone.js](http://momentjs.com/timezone).
