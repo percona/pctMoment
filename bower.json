@@ -16,8 +16,8 @@
   ],
   "main": "dist/pctMoment.js",
   "ignore": [
-    "!dist/*.js",
     "*",
+    "src/**/*.*",
     "**/.*",
     "node_modules",
     "bower_components",
