@@ -5,7 +5,8 @@
         .factory('moment', momentService);
 
 
-
+    // Explicitly inject services
+    momentService.$inject = ['$window'];
 
     /**
      *  @ngdoc service
@@ -47,5 +48,6 @@
 
         return $window.moment;
     }
+
 
 })(angular);

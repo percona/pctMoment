@@ -17,4 +17,4 @@
         'pctMoment.service'
     ]);
 
-}) (angular)
+}) (angular);
