@@ -1,4 +1,4 @@
-(function (angular) {
+(function(angular) {
     'use strict';
 
     angular.module('pctMoment.service', [])
@@ -65,7 +65,7 @@
      */
     function momentService($window) {
 
-        if( !$window.hasOwnProperty('moment') ) {
+        if (!$window.hasOwnProperty('moment')) {
             throw new ReferenceError(
                 'pctMoment: window.moment is undefined, please make sure you\'ve loaded moment.js script tag'
             );
