@@ -111,6 +111,12 @@ Thanks to all these resources for inspiration and learning:
 - https://github.com/VictorQueiroz/ngMoment
 - https://github.com/urish/angular-moment
 
+
+## Contribute
+
+This project uses Gulp, Karma and JSCS (stylechecker).
+Use them and contribute!
+
 ## Licence
 
 MIT (see LICENCE file)
