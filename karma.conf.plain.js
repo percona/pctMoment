@@ -8,6 +8,19 @@ module.exports = function(config) {
     config.set({
         browsers: ['PhantomJS'],
         frameworks: ['jasmine'],
+
+        // coverage reporter generates the coverage
+        reporters: ['progress', 'coverage'],
+
+        preprocessors: {
+            // source files, that you wanna generate coverage for
+            // do not include tests or libraries
+            // (these files will be instrumented by Istanbul)
+            'src/**/!(*.spec).js': ['coverage']
+        },
+
+
+
         files: [
             // Libs
             'bower_components/angular/angular.js',
