@@ -1,10 +1,10 @@
 var gulp = require('gulp');
 var karma = require('karma').server;
-var jscs = require('gulp-jscs');
-var concat = require('gulp-concat');
 var del = require('del');
-var uglify = require('gulp-uglify');
-var rename = require('gulp-rename');
+
+//Load automatically all gulp plugins and access them
+//as attributes of `$` variable
+var $ = require('gulp-load-plugins')();
 
 
 /*
@@ -69,7 +69,7 @@ gulp.task('jscs', function() {
             DIR.karma.plain,
             DIR.karma.minified
         ])
-        .pipe(jscs());
+        .pipe($.jscs());
 });
 
 
@@ -96,10 +96,10 @@ gulp.task('continuous', [
  */
 gulp.task('dist', ['clean:dist'], function() {
     return gulp.src(DIR.src)
-        .pipe(concat('pctMoment.js'))
+        .pipe($.concat('pctMoment.js'))
         .pipe(gulp.dest(DIR.dist))
-        .pipe(uglify())
-        .pipe(rename('pctMoment.min.js'))
+        .pipe($.uglify())
+        .pipe($.rename('pctMoment.min.js'))
         .pipe(gulp.dest(DIR.dist));
 });
 
