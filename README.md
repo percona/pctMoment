@@ -84,6 +84,24 @@ angular.module('example', ['pctMoment'])
 });
 ```
 
+You can also detect if Moment-timezone has been loaded or not
+as a way of asserting against that parameter
+```javascript
+angular.module('example', ['pctMoment'])
+
+.controller('ExampleController', function(isMomentTimezoneLoaded, moment) {
+
+    if (!isMomentTimezoneLoaded()){
+        throw new Error('please load moment-timezone.js please!') 
+    }
+
+    //use moment-timezone api!
+
+    moment().tz('Europe/Rome').format();
+}); 
+
+```
+
 
 For more documentation check inline docs (we are still working on
 auto generating the docs).
