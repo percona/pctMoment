@@ -14,7 +14,8 @@
      *
      */
     angular.module('pctMoment', [
-        'pctMoment.service'
+        'pctMoment.service',
+        'pctMoment.isMomentTimezoneLoaded'
     ]);
 
 }) (angular);
